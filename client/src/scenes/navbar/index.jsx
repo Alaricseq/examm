@@ -1,4 +1,5 @@
 import { useState } from "react";
+import { Link } from "react-router-dom";
 import {
   Box,
   IconButton,
@@ -72,6 +73,13 @@ const Navbar = () => {
           </FlexBetween>
         )}
       </FlexBetween>
+
+      {/* Animal Button */}
+      <Link to="/animal" style={{ textDecoration: "none" }}>
+        <IconButton sx={{ width: "60px", height: "60px", borderRadius: "50%" }}>
+          <Typography>Animal</Typography>
+        </IconButton>
+      </Link>
 
       {/* DESKTOP NAV */}
       {isNonMobileScreens ? (
